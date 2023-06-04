@@ -1,0 +1,83 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#output {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+.button-gather,
+.button-burn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 10px; /* Add space between buttons */
+}
+
+.button-gather {
+  background-color: #4caf50;
+  color: white;
+}
+.button-gather.disabled {
+  /* Add styles to indicate the button is disabled or on cooldown */
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-burn {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-gather:hover,
+.button-burn:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+#inventory {
+  margin-top: 20px;
+}
+
+#itemList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 30px;
+}
